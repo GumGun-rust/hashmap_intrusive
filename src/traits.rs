@@ -4,5 +4,5 @@ use blake3::{
 };
 
 pub trait GHash {
-    fn hash(&self, hash:Hasher) -> Hash;
+    fn hash(&self, hash:&mut Hasher) -> Hash;
 }
